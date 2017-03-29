@@ -1,0 +1,22 @@
+body {
+    background-image: url(../img/1.jpg);
+}
+
+.firstPage {
+    margin-bottom: 1000px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: inherit;
+    margin: 0 auto;
+    margin-top: 15%;
+}
+
+.missions {
+    margin: 0 10%;
+}
+
+.contacts {
+    margin: 0 10%;
+}
