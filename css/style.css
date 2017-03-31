@@ -3,7 +3,19 @@ body {
 }
 
 .firstPage {
-    margin-bottom: 1000px;
+    margin-bottom: 20%;
+}
+
+.secondPage {
+    margin-bottom: 40%;
+}
+
+.tasks h1 {
+    text-align: center;
+}
+
+.form-group {
+    width: 50%;
 }
 
 .jumbotron {
