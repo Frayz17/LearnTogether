@@ -1,49 +1,59 @@
 body {
-    background-image: url(../img/61.jpg);
+    background-image: url(../img/11.jpg);
     background-repeat:no-repeat;
     background-position: center top;
     color: white;
-    background-size: 100%;
+    /*background-size: 100%;*/
 }
 
-.firstPage {
-    margin-bottom: 20%;
+.cogntainer {
+    margin: 0;
+    padding: 0;
 }
 
 .secondPage {
-    margin-bottom: 40%;
+    border: 1px solid #4c4c4c;
+    padding: 30px;
+    color: #4c4c4c;
+    margin-bottom: 100px;
+    background-color: #f2ece6;
 }
 
-.tasks h1 {
-    text-align: center;
-}
-
-.form-group {
-    width: 50%;
+.thirdPage {
+    color: #4c4c4c;
 }
 
 .jumbotron {
     text-align: center;
     background-color: inherit;
     margin: 0 auto;
-    margin-top: 10%;
-    max-width: 800px;
+    margin-top: 8em;
+    max-width: 1000px;
+    font-size: inherit;
 }
 
-.main-header {
+.jumbotron .main-header {
+    font-family: 'Chewy', cursive;
+    font-size: 8em;
+    font-weight: bolder;
+    text-shadow: 5px 5px #4c4c4c;
+}
+
+.main-description {
     color: white;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 1px 1px 2px black;
 }
 
-/*.descripton-jumbotron {
-    text-align: center;
-    max-width: 400px;
-}*/
-
-.missions {
-    margin: 0 10%;
+.missions, .contacts {
+    box-shadow: 10px 10px 5px #888888;
+    /*width: 100%;*/
+    margin: 0 auto ;
 }
 
-.contacts {
-    margin: 0 10%;
+.jumbotron, .main-description {
+    font-family: 'Asap', sans-serif;
+}
+
+.task-li {
+    margin: 20px 0;
 }

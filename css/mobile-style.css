@@ -1,0 +1,80 @@
+body {
+    background-image: url(../img/11.jpg);
+    background-repeat:no-repeat;
+    background-position: center top;
+    color: white;
+    /*background-size: 100%;*/
+    background-size: auto 800px;
+}
+
+.firstPage {
+    min-height: 800px;
+}
+
+
+.jumbotron {
+    text-align: center;
+    background-color: inherit;
+    margin: 0 auto;
+    margin-top: 80px;
+    max-width: 1000px;
+    font-size: inherit;
+    /*min-height: 700px;*/
+}
+
+.jumbotron .main-header {
+    font-family: 'Chewy', cursive;
+    font-size: 3em;
+    font-weight: bolder;
+    text-shadow: 3px 3px  #4c4c4c;
+}
+
+.main-header {
+    color: white;
+    text-shadow: 3px 3px  #4c4c4c;
+}
+
+.jumbotron .buttons-firstPage {
+    margin-top: 70px;
+}
+
+.missions, .contacts {
+    box-shadow: 5px 5px 5px #4c4c4c;
+    min-width: 90%;
+    margin: 0 auto ;
+}
+
+.task-heading {
+    font-family: 'Chewy', cursive;
+}
+
+.task-list {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 1.2em;
+}
+
+.request-heading {
+    font-family: 'Chewy', cursive;
+}
+
+.request-email {
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.secondPage {
+    border: 1px solid #4c4c4c;
+    padding: 15px;
+
+}
+
+@media screen and (max-width: 350px) {
+
+    .jumbotron .main-header {
+        font-weight: bolder;
+        text-shadow: 3px 3px  #4c4c4c;
+      }
+
+    .jumbotron .main-description {
+        font-size: 18px;
+    }
+}
