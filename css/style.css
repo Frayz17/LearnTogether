@@ -1,34 +1,52 @@
 body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Asap', sans-serif;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.firstPage {
     background-image: url(../img/11.jpg);
     background-repeat:no-repeat;
     background-position: center top;
-    color: white;
-    /*background-size: 100%;*/
-}
-
-.cogntainer {
-    margin: 0;
-    padding: 0;
+    /*width: 100%;*/
+    /*min-height: 900px;*/
+    max-height: 1080px;
 }
 
 .secondPage {
-    border: 1px solid #4c4c4c;
+    border-top: 1px solid #4c4c4c;
+    border-bottom: 1px solid #4c4c4c;
     padding: 30px;
     color: #4c4c4c;
-    margin-bottom: 100px;
-    background-color: #f2ece6;
+    background-color: #F3F3F3;
+    /*f2ece6*/
+    /*FAF2ED*/
 }
 
 .thirdPage {
+    background-color: #EBE9E6;
+    padding: 15px;
     color: #4c4c4c;
+
+    /*2B4162  beaut*/
+    /*efede8*/
+    /*EBE9E6*/
 }
 
 .jumbotron {
     text-align: center;
     background-color: inherit;
     margin: 0 auto;
-    margin-top: 8em;
-    max-width: 1000px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    max-width: 1200px;
     font-size: inherit;
 }
 
@@ -37,23 +55,80 @@ body {
     font-size: 8em;
     font-weight: bolder;
     text-shadow: 5px 5px #4c4c4c;
+    padding: 30px;
 }
 
-.main-description {
+.jumbotron .main-description {
     color: white;
-    text-shadow: 1px 1px 2px black;
-}
-
-.missions, .contacts {
-    box-shadow: 10px 10px 5px #888888;
-    /*width: 100%;*/
-    margin: 0 auto ;
-}
-
-.jumbotron, .main-description {
+    text-shadow: 1px 1px 2px #4c4c4c;
+    width: 60%;
+    margin: 0 auto;
     font-family: 'Asap', sans-serif;
 }
 
-.task-li {
+.missions, .contacts {
+    box-shadow: 7px 7px 5px #4c4c4c;
+    margin-top: 80px;
+    padding: 20px;
+    width: 160px;
+}
+
+.missions {
+    margin-right: 50px;
+    /*background-color: #87B38D;*/
+}
+
+.contacts {
+    margin-left: 50px;
+    /*background-color: #CF5C36;*/
+}
+
+
+.tasks {
     margin: 20px 0;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.task-heading {
+    font-family: 'Chewy', cursive;
+}
+
+.task-list {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 1.2em;
+}
+
+.request {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.request-heading {
+    font-family: 'Chewy', cursive;
+    text-align: center;
+}
+
+.request-email {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.request-submit {
+    font-weight: 800;
+    box-shadow: 5px 5px 5px #4c4c4c;
+    font-family: 'Chewy', cursive;
+    color: #EBE9E6;
+}
+
+#textarea, #email {
+    box-shadow: 1px 1px 5px #4c4c4c;
+}
+
+@media (max-width: 1100px) {
+    .jumbotron .main-header {
+        font-size: 7em;
+    }
+
 }
