@@ -12,10 +12,10 @@ body {
 }
 
 .firstPage {
-    background-image: url(../img/11.jpg);
+    background-image: url(../img/1.jpg);
     background-repeat:no-repeat;
     background-position: center top;
-    /*width: 100%;*/
+    width: 100%;
     /*min-height: 900px;*/
     max-height: 1080px;
 }
@@ -91,7 +91,9 @@ body {
 }
 
 .task-heading {
+    font-size: 4em;
     font-family: 'Chewy', cursive;
+    font-weight: 500;
 }
 
 .task-list {

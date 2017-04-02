@@ -49,22 +49,26 @@
         <div class="thirdPage">
             <div class="request">
                 <h1 class="request-heading">Заявка:</h1>
-                <form class="" action="index.html" method="post">
+                {!! Form::open(['route' => 'landingSubmit']) !!}   
                     <div class="form-group">
-                        <label for="textarea">Немного о себе:</label>
-                        <textarea class="form-control" id="textarea" rows="10" cols="10"></textarea>
+                        {{ Form::label('name', 'Ваше Имя:', ['class' => 'request-name']) }}
+                        {{ Form::text('name', '', ['class' => 'form-control request-name', 'id' => 'name']) }}
                     </div>
                     <div class="form-group">
-                        <label for="email" class="request-email">Email:</label>
-                        <input type="email" class="form-control" id="email">
+                        {{ Form::label('textarea', 'Немного о себе:') }}
+                        {{ Form::textarea('textarea', '', ['class' => 'form-control', 'id' => 'textarea', 'rows' => '10', 'cols' => '10']) }}
                     </div>
-                    <button type="submit" class="btn btn-success btn-block request-submit">ОТПРАВИТЬ</button>
-                </form>
+                    <div class="form-group">
+                        {{ Form::label('email', 'Email:', ['class' => 'request-email']) }}
+                        {{ Form::text('email', '', ['class' => 'form-control request-email', 'id' => 'email']) }}
+
+                    </div>
+                        {{ Form::submit('ОТПРАВИТЬ', ['class' => 'btn btn-success btn-block request-submit']) }}
+                {!! Form::close() !!}
             </div>
         </div>
 
     </div>
-    <h1></h1>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
