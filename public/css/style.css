@@ -1,5 +1,5 @@
 body {
-    color: white;
+    color: #333333;
     margin: 0;
     padding: 0;
     font-family: 'Asap', sans-serif;
@@ -11,33 +11,26 @@ body {
     width: 100%;
 }
 
-.firstPage {
+#firstPage {
     background-image: url(../img/1.jpg);
     background-repeat:no-repeat;
     background-position: center top;
-    width: 100%;
-    /*min-height: 900px;*/
-    max-height: 1080px;
+    background-size: cover;
 }
 
-.secondPage {
+#secondPage {
     border-top: 1px solid #4c4c4c;
     border-bottom: 1px solid #4c4c4c;
     padding: 30px;
-    color: #4c4c4c;
+    /*color: #4c4c4c;*/
     background-color: #F3F3F3;
-    /*f2ece6*/
-    /*FAF2ED*/
 }
 
-.thirdPage {
+#thirdPage {
     background-color: #EBE9E6;
     padding: 15px;
-    color: #4c4c4c;
-
-    /*2B4162  beaut*/
-    /*efede8*/
-    /*EBE9E6*/
+    text-align: center;
+    padding-bottom: 50px;
 }
 
 .jumbotron {
@@ -54,20 +47,22 @@ body {
     font-family: 'Chewy', cursive;
     font-size: 8em;
     font-weight: bolder;
-    text-shadow: 5px 5px #4c4c4c;
+    text-shadow: 1px 1px 1px #4c4c4c;
     padding: 30px;
 }
 
 .jumbotron .main-description {
-    color: white;
-    text-shadow: 1px 1px 2px #4c4c4c;
+    text-shadow: 1px 1px 1px #4c4c4c;
+    font-weight: bold;
     width: 60%;
     margin: 0 auto;
     font-family: 'Asap', sans-serif;
+    font-size: 1.5em;
+    
 }
 
 .missions, .contacts {
-    box-shadow: 7px 7px 5px #4c4c4c;
+    /*box-shadow: 5px 5px 3px #4c4c4c;*/
     margin-top: 80px;
     padding: 20px;
     width: 160px;
@@ -91,9 +86,10 @@ body {
 }
 
 .task-heading {
-    font-size: 4em;
+    font-size: 3em;
     font-family: 'Chewy', cursive;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .task-list {
@@ -101,31 +97,68 @@ body {
     font-size: 1.2em;
 }
 
+.row {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+h1.thirdPage-contacts {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2.5em;
+    /*font-weight: bold;*/
+    font-family: 'Chewy', cursive;
+}
+
+.my-contacts {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-description {
+    font-size: 1em;
+}
+
+.contact-obj {
+    font-size: 1.2em;
+    font-weight: bold;
+    width:100%;
+}
+
 .request {
     max-width: 400px;
     margin: 0 auto;
+    margin-top: 50px;
 }
 
 .request-heading {
     font-family: 'Chewy', cursive;
     text-align: center;
-}
-
-.request-email {
-    font-family: 'Fira Sans Condensed', sans-serif;
-    text-align: center;
-    margin: 0 auto;
+    font-size: 2.5em;
 }
 
 .request-submit {
     font-weight: 800;
-    box-shadow: 5px 5px 5px #4c4c4c;
+    box-shadow: 1px 1px 1px #4c4c4c;
     font-family: 'Chewy', cursive;
-    color: #EBE9E6;
+    color: #EEEEEE;
 }
 
-#textarea, #email {
-    box-shadow: 1px 1px 5px #4c4c4c;
+#textarea {
+    box-shadow: 1px 1px 1px #4c4c4c;
+}
+
+.footer-description {
+    background-color: #4c4c4c;
+    color: white;
+    margin: 0;
+    padding: 30px 0;
+    text-align: center;
+    color: #eeeeee;
+    font-family: 'Fira Sans Condensed', sans-serif;
+
 }
 
 @media (max-width: 1100px) {

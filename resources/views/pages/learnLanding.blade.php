@@ -22,20 +22,20 @@
 
 <body>
     <div class="container">
-        <div class="firstPage">
+        <div id="firstPage">
             <div class="jumbotron">
-                <h1 class="main-header">Учиться Вместе!</h1>
-                <p class="main-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                <h1 class="main-header">Кодим Вместе!</h1>
+                <p class="main-description">Учимся веб-разработке командой. Интересней, эффективней и быстрей.</p>
 
                 <div class="buttons-firstPage">
-                    <p class="btn btn-success missions">ЦЕЛИ</p>
-                    <p class="btn btn-primary contacts">КОНТАКТЫ</p>
+                    <a href="#secondPage"><p class="btn btn-success missions">ЦЕЛИ</p></a>
+                    <a href="#thirdPage"><p class="btn btn-primary contacts">КОНТАКТЫ</p></a>
                 </div>
 
             </div>
         </div>
 
-        <div class="secondPage">
+        <div id="secondPage">
             <div class="tasks">
                 <h1 class="task-heading">Цели:</h1>
                 <ul class="task-list">
@@ -46,29 +46,78 @@
             </div>
         </div>
 
-        <div class="thirdPage">
-            <div class="request">
-                <h1 class="request-heading">Заявка:</h1>
-                {!! Form::open(['route' => 'landingSubmit']) !!}   
-                    <div class="form-group">
-                        {{ Form::label('name', 'Ваше Имя:', ['class' => 'request-name']) }}
-                        {{ Form::text('name', '', ['class' => 'form-control request-name', 'id' => 'name']) }}
-                    </div>
-                    <div class="form-group">
-                        {{ Form::label('textarea', 'Немного о себе:') }}
-                        {{ Form::textarea('textarea', '', ['class' => 'form-control', 'id' => 'textarea', 'rows' => '10', 'cols' => '10']) }}
-                    </div>
-                    <div class="form-group">
-                        {{ Form::label('email', 'Email:', ['class' => 'request-email']) }}
-                        {{ Form::text('email', '', ['class' => 'form-control request-email', 'id' => 'email']) }}
+        <div id="thirdPage">
+            <div class="container">
+
+                <div class="row">
+                    <div class="contacts-box">
+
+                        <div class="col-sm-6">                        
+                            <h1 class="thirdPage-contacts col-sm-6">Контакты</h1>
+
+                            <div class="mobile-number my-contacts">
+                                <p class="contact-description">Телефон</p>
+                                <span class="contact-obj">098-388-86-28</span>
+                            </div>
+                            <div class="skype my-contacts">
+                                <p class="contact-description">Скайп</p> 
+                                <span class="contact-obj">llfraysll</span>
+                            </div>
+                            <div class="email my-contacts">
+                                <p class="contact-description">Почта</p>
+                                <span class="contact-obj">andrydmit@gmail.com</span>
+                            </div>
+
+                        </div>
+                    
+                        <div class="col-sm-6">
+                            <div class="request">
+                                <h1 class="request-heading">Связаться напрямую:</h1>
+                                {!! Form::open(['route' => 'landingSubmit']) !!}   
+                                    <div class="form-group">
+                                        {{ Form::label('name', 'Ваше Имя:', ['class' => 'request-name']) }}
+                                        {{ Form::text('name', '', ['class' => 'form-control request-name', 'id' => 'name']) }}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ Form::label('textarea', 'Немного о себе:') }}
+                                        {{ Form::textarea('textarea', '', ['class' => 'form-control', 'id' => 'textarea', 'rows' => '10', 'cols' => '10']) }}
+                                    </div>
+                                        {{ Form::submit('ОТПРАВИТЬ', ['class' => 'btn btn-success btn-block request-submit']) }}
+                                {!! Form::close() !!}
+                            </div>   
+                        </div>
 
                     </div>
-                        {{ Form::submit('ОТПРАВИТЬ', ['class' => 'btn btn-success btn-block request-submit']) }}
-                {!! Form::close() !!}
-            </div>
-        </div>
+                    
+                </div>
+
+               <!--  <div class="row">
+                    <div class="col-sm-4">
+                        <div class="mobile-number">
+                            <p class="contact-description">Телефон</p>
+                            <span class="contact-obj">098-388-86-28</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="skype">
+                            <p class="contact-description">Скайп</p> 
+                            <span class="contact-obj">llfraysll</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="email">
+                            <p class="contact-description">Почта</p>
+                            <span class="contact-obj">andrydmit@gmail.com</span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>    
 
     </div>
+
+    <footer>
+                <p class="footer-description">Site created by Dmitriew Andrey at 2017.</p>
+    </footer>  
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

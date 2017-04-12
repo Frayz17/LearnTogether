@@ -1,6 +1,5 @@
 .jumbotron .main-header {
     font-size: 5em;
-    text-shadow: 3px 3px 2px #4c4c4c;
 }
 
 @media (max-width: 630px) {
